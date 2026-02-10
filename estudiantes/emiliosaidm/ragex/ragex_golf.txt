@@ -1,0 +1,20 @@
+=== NIVEL Warmup ===
+Regex usado: (foo)
+Explicación: Matchea todas las cadenas que contengan "foo".
+Proceso de pensamiento: Me di cuenta que las palabras tenían foo, por lo que un Ragex que satisficiera la inclusión iba a ser suficiente. 
+
+=== NIVEL Anchors ===
+Regex usado: ck$
+Explicación: Matchea todas las cadenas que acaben con "ck".
+Proceso de pensamiento: Todas las cadenas terminan con ck, y ninguna de de las que no deben matchear acaban con ck. 
+
+
+=== NIVEL It never ends ===
+Regex usado: fu\b
+Explicación: Hace el match de la combinación fu, pero depués de fu ya no debe de haber ni un carácter que este incluido en [A-Za-z0-9_].
+Proceso de pensamiento: Investigando, determine que hacia \b (word boundary); con eso, en el ejercicio vi que todas las palabras acababan con fu y al no poder poner \b satisfago el requerimiento. 
+
+=== NIVEL Ranges ===
+Regex usado: ^[a-f]+$
+Explicación: Hace match de todas las palabras cuyos caracteres estén entre la a y la f de principio a fin. 
+Proceso de pensamiento: Las palabras buenas tienen caracteres que oscilan entre a y f. Forcé utilizar palabras de la a a la f en cada carácter de la palabra. 
